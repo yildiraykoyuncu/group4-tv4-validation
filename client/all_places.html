@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenful Places Belgium | WebApps Project</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./flexgrid.css">
+  <script src="https://kit.fontawesome.com/f8746982fe.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="main-header">
+        <div class="row middle-xs midlle-sm start-md start-lg center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h1 class="site-title">Zenful Places Belgium</h1>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <nav class="navbar">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="all_places.html">View Places</a></li>
+                <li><a href="add_place.html">Add A New Place</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Just Go And Relax Your Mind</h2>
+                <p>“Tension is who you think you should be. Relaxation is who you are.” –Chinese Proverb</p>
+                <!--ICON LINE 1-->
+                <div class="line-container">
+                    <div class="row center-xs center-sm center-md center-lg">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                           <a href="./detail_place.html">  <!--LINK TO TEST-->
+                              <div class="card-wrapper">
+                                <img class="place-pic-style cards-info" src="./images/norali-nayla-unsplash.jpg" alt="brussels park">
+                                <div class="place-name-style cards-info">
+                                   Bois de la Cambre
+                                </div>
+                                <div class="place-loc-style cards-info">
+                                    <i class="fas fa-map-marker"></i>
+                                    Brussels
+                                </div>
+                              </div>
+                          </a>
+                       </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                           <div class="card-wrapper">
+                               <img class="place-pic-style cards-info" src="./images/hubert-van-den-borre-unsplash.jpg" alt="Geraadsbergen">
+                               <div class="place-name-style cards-info">
+                                   Domains de Gavers</div>
+                               <div class="place-loc-style cards-info">
+                                   <i class="fas fa-map-marker"></i>
+                                   Geraadsbergen
+                                </div>
+                           </div>
+                       </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                           <div class="card-wrapper">
+                               <img class="place-pic-style cards-info" src="./images/albert-dehon-unsplash.jpg" alt="Longfaye">
+                               <div class="place-name-style cards-info">
+                                   Longfaye
+                               </div>
+                               <div class="place-loc-style cards-info">
+                                   <i class="fas fa-map-marker"></i>
+                                   Liege
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>    
+            </div>
+        </div>
+    </main>
+  </div>
+
+
+  <div id='root'></div>
+
+  <script src='./app/init.js'></script>
+</body>
+
+</html>
