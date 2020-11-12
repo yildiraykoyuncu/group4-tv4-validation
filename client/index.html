@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>courses web-app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenful Places Belgium | WebApps Project</title>
 
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./flexgrid.css">
+  <script src="https://kit.fontawesome.com/f8746982fe.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+  <div class="homepage-container">
+    <header class="homepage-header">
+      <div class="row middle-xs midlle-sm start-md start-lg center-xs center-sm center-md center-lg">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h1 class="site-title">Zenful Places Belgium</h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <nav class="navbar">
+            <ul>
+              <li class="current"><a href="index.html">Home</a></li>
+              <li><a href="all_places.html">View Places</a></li>
+              <li><a href="add_place.html">Add A New Place</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <div class="showcase-container">
+      <section class="showcase">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h2 id="cta">Where To Find A Place To Relax Your Mind</h2>
+            <button class="btn-cta"><a href="all_places.html"></a> View Places</button>
+          </div>
+        </section>
+      </div>
+      
+    </div>
+  </div>
+
+
+
   <div id='root'></div>
 
   <script src='./app/init.js'></script>

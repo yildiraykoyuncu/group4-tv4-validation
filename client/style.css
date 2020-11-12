@@ -1,3 +1,434 @@
 body {
-  background-color: peachpuff;
+  background-color: white;
+  color: #2c3428;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.homepage-container {
+  background: url(./images/norali-nayla-unsplash.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.homepage-header, .main-header {
+  height: 60px;
+  background-color: white;
+  opacity: 0.8;
+  color: inherit;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.site-title {
+  font-weight: none;
+}
+
+.navbar {
+  text-transform: uppercase;
+  margin-left: 27rem;
+}
+
+.navbar li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+  color: inherit;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar a:hover {
+  color: #6c674c;
+  border-bottom: 3px solid #6c674c;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.navbar .current a {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-weight: bolder;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.showcase-container {
+  min-height: calc(100vh - 10vh);
+}
+
+.showcase {
+  padding-top: 40vh;
+  padding-right: 10vw;
+}
+
+.showcase h2 {
+  font-size: 40px;
+  margin: 10px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.showcase button {
+  margin: 10px;
+  width: 170px;
+  background-color: white;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bolder;
+  color:  #2c3428;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*----------ALL PLACES PAGE-------------------*/
+
+.page-container {
+  margin: auto;
+}
+
+.content-container {
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.main-header {
+  background-color: #2c3428;
+  color: white;
+}
+
+.card-wrapper {
+  border: 4px solid white;
+  border-radius: 7px;
+  padding: 12px;
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-wrapper:hover {
+  cursor: pointer;
+  transform: translateY(-0.4rem);
+}
+
+.place-pic-style {
+  object-fit: cover;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  border: 1px solid #d5d2c1;
+  border-radius: 7px;
+  background-size: cover;
+}
+
+.place-loc-style {
+  display: inline;
+}
+
+.cards-info {
+  margin: 6px 0;
+}
+
+.line-container {
+  margin-top: 3rem;
+}
+
+.line-container a {
+  text-decoration: none;
+}
+
+/*----------DETAILS PAGE-------------------*/
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 650px;
+}
+
+.details-style {
+  margin: 15px;
+}
+
+.description {
+  line-height: 1.5em;
+}
+
+.content-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.content-buttons button {
+  width: 120px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px gray;
+  cursor: pointer;
+}
+
+.details-pic-style {
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+/*----------ADD NEW PLACE-------------------*/
+
+.form-container {
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.form-container input {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 12px 20px;
+  width: 92%;
+  margin: auto;
+}
+
+.form-container textarea {
+  width: 96%;
+  font-family: inherit;
+  margin: auto;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 12px 20px;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: none;
+  width: auto;
+  margin: auto;
+  padding: 20px 10px;
+  margin-top: 1.5rem;
+}
+
+.upload-box input {
+  width: auto; 
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+}
+
+.upload-box .submit-btn {
+  background-color: white;
+  color: inherit;
+  margin-top: 15px;
+  padding: 7px 12px;
+}
+
+.form-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.form-buttons button {
+  width: 120px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px gray;
+  cursor: pointer;
+}
+
+.btn-cta {
+  background-color: #2c3428;
+  color: white;
+  opacity: 0.8;
+}
+
+.btn-cta:hover {
+  background-color: #2c3428;
+  opacity: 1;
+  color: white;
+}
+
+
+/*----------MEDIA-------------------*/
+
+@media (max-width:1900px) {
+  .homepage-header  {
+    height: 70px;
+  }
+  
+  .main-header {
+    height: 70px;
+  }
+}
+
+@media (max-width:1200px) {
+  .homepage-header {
+    height: 70px;
+  }
+
+  .main-header {
+    height: 70px;
+  }
+
+  .site-title {
+    font-size: 26px;
+  }
+
+  #cta {
+    font-size: 33px;
+  }
+
+  .navbar {
+    margin-left: 12rem;
+  }
+
+  .place-pic-style {
+    width: 200px;
+    height: 200px;
+  }
+
+  .details-pic-style {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:1000px) {
+  .homepage-header {
+      height: 120px;
+      margin: 0px;
+  }
+
+  .main-header {
+    height: 120px;
+  }
+
+  .showcase {
+    padding-top: 40vh;
+    padding-right: 30vw;
+  }
+
+  .site-title {
+    font-size: 24px;
+  }
+
+  #cta {
+    font-size: 26px;
+  }
+  
+  .navbar {
+    margin-left: 0px;
+  }
+
+  .card-wrapper {
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .details {
+    min-height: 0px;
+  }
+
+  .form-container textarea {
+    width: 92%;
+  }
+
+  .upload-box {
+    width: 94%;
+  }
+}
+
+@media (max-width:500px) {
+  .homepage-header {
+    height: 130px;
+    margin: 0px;
+  }
+
+  .main-header {
+  height: 130px;
+  }
+
+  .navbar {
+    margin-left: 0px;
+  }
+
+  .navbar ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar li {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 0px;
+    margin: 3px 0px;
+  }
+
+  .site-title {
+    font-size: 17px;
+  }
+
+  .upload-box {
+    width: 96%;
+  }
+
+}
+
+@media (max-width:400px) {
+  .homepage-header {
+    height: 130px;
+    margin: 0px;
+  }
+
+  .main-header {
+  height: 130px;
+  }
+
+  .navbar {
+    margin-bottom: 8px;
+    margin-left: 0px;
+  }
+
+  .navbar ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar li {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 0px;
+    margin: 3px 0px;
+  }
+
+  .site-title {
+    font-size: 17px;
+  }
+
+  .upload-box {
+    width: 98%;
+  }
+
+  .upload-box .file-btn {
+    width: 85%;
+  }
 }

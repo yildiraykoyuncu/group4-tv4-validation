@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenful Places Belgium | WebApps Project</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./flexgrid.css">
+  <script src="https://kit.fontawesome.com/f8746982fe.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="main-header">
+      <div class="row middle-xs midlle-sm start-md start-lg center-xs center-sm center-md center-lg">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <h1 class="site-title">Zenful Places Belgium</h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="all_places.html">View Places</a></li>
+              <li class="current"><a href="add_place.html">Add A New Place</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <section>
+        <div class="form-container">
+          <div class="row center-xs center-sm start-md start-lg">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <p>What is the name of this place?</p>
+                  <input type="text" placeholder="Place Name">
+              </div>              
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <p>Where is it located?</p>
+                  <input type="text" placeholder="City/Town">
+              </div>
+          </div>
+          <div class="row center-xs center-sm start-md start-lg">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <p>In which province is it located?</p>
+                  <input type="text" placeholder="Province">
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <p>How to get to get to this place?</p>
+                  <input type="text" placeholder="Ex: By Bus 123, 10 minutes biking from the nearest station">
+              </div>
+          </div>
+          <div class="row center-xs center-sm start-md start-lg">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>Can you explain more about this place?</p>
+                <textarea placeholder="Recommended activities, interesting spots or events, ...""></textarea>
+              </div>
+          </div>
+
+          <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <form action="/action_page.php" class="upload-box">
+                  <input class="file-btn" type="file">
+                  <input class="submit-btn" type="submit">
+                </form>
+            </div>  
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="form-buttons">
+                <button>Back</button>
+                <button class="btn-cta">Add Place</button>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </div>
+    
+
+
+  <div id='root'></div>
+
+  <script src='./app/init.js'></script>
+</body>
+
+</html>
