@@ -7,9 +7,9 @@
 //   })
 //   .catch(err => console.error(err));
 
+import {List} from './list.js'
 import {Place} from './place.js'
 
-const place = new Place(3, 'test', 'antwerp', 'flanders', 'bike', 'very nice', '../images/hubert-van-den-borre-unsplash.jpg');
+const placeList = new List(Place, '/api/places');
 
-const html = place.renderAll();
-document.getElementById('places').appendChild(html);
+

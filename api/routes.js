@@ -3,9 +3,9 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/', controllers.hello);
+
 
 // write your routes
 
-
+router.get("/places", controllers.getAllHandler);
 module.exports = router;
