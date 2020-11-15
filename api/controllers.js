@@ -21,11 +21,25 @@ const controllers = {
     try{
       const places = await readFilePromise(DATA_PATH, 'utf8');
       res.send(places)
-console.log(places)
 
     }catch(err){
-      console.log(DATA_PATH)
-res.status(404).send(err)
+      res.status(404).send(err)
+    }
+  },
+
+  getPlaceHandler: async(req, res) =>{
+    try{
+      const id = Number(req.params.id);
+      const response = await readFilePromise(DATA_PATH, 'utf8');
+      const places = await JSON.parse(response);
+      const place = places.filter(place =>{
+        return place.id === id;
+      });
+      const stringifiedPlace = JSON.stringify(place[0])
+      res.send(stringifiedPlace)
+
+    }catch(err){
+      res.status(404).send(err)
     }
   }
 
