@@ -37,7 +37,7 @@ app.use(function (err, req, res, next) {
   res.status(500).end();
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(config.PORT, () => {
   console.log(
     `listening at http://localhost:${config.PORT} (${config.MODE} mode)`
   );
