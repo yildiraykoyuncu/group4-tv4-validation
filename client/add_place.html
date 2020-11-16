@@ -33,50 +33,52 @@
 
 
     <section>
-        <div class="form-container">
+        <form class="form-container">
           <div class="row center-xs center-sm start-md start-lg">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                   <p>What is the name of this place?</p>
-                  <input type="text" placeholder="Place Name">
+                  <input type="text" placeholder="Place Name" name="name">
               </div>              
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                   <p>Where is it located?</p>
-                  <input type="text" placeholder="City/Town">
+                  <input type="text" placeholder="City/Town" name="city">
               </div>
           </div>
           <div class="row center-xs center-sm start-md start-lg">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                   <p>In which province is it located?</p>
-                  <input type="text" placeholder="Province">
+                  <input type="text" placeholder="Province" name="province">
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                   <p>How to get to get to this place?</p>
-                  <input type="text" placeholder="Ex: By Bus 123, 10 minutes biking from the nearest station">
+                  <input type="text" placeholder="Ex: By Bus 123, 10 minutes biking from the nearest station" name="directions">
               </div>
           </div>
           <div class="row center-xs center-sm start-md start-lg">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p>Can you explain more about this place?</p>
-                <textarea placeholder="Recommended activities, interesting spots or events, ...""></textarea>
+                <textarea placeholder="Recommended activities, interesting spots or events, ..." name="discription"></textarea>
               </div>
           </div>
 
           <div class="row center-xs center-sm center-md center-lg">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <form action="/action_page.php" class="upload-box">
+                <!-- <form action="/action_page.php" class="upload-box">
                   <input class="file-btn" type="file">
                   <input class="submit-btn" type="submit">
-                </form>
+                </form> -->
+               <p>Enter the URL of the photo ypu want to upload</p>
+                  <input type="text" placeholder="Photo URL" name="imgUrl">
             </div>  
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div class="form-buttons">
                 <button>Back</button>
-                <button class="btn-cta">Add Place</button>
+                <button type="submit" id="add-place" class="btn-cta">Add Place</button>
               </div>
                 
             </div>
           </div>
-        </div>
+        </form>
     </section>
 
   </div>
@@ -85,7 +87,7 @@
 
   <div id='root'></div>
 
-  <script type='module' src='./app/init.js'></script>
+  <script type='module' src='./app/addNew.js'></script>
 </body>
 
 </html>

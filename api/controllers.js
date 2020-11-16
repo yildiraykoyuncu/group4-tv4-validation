@@ -5,6 +5,7 @@ const path = require('path');
 const tv4 = require('tv4');
 const config = require('../config');
 const util = require('util')
+const {nanoid} = require('nanoid')
 
 const readFilePromise = util.promisify(fs.readFile);
 const writeFilePromise = util.promisify(fs.writeFile);
@@ -41,6 +42,29 @@ const controllers = {
     }catch(err){
       res.status(404).send(err)
     }
+  },
+
+  addPlaceHandler: async(req, res)=> {
+try{
+  const placesString = await readFilePromise(DATA_PATH, 'utf8')
+
+  const places = JSON.parse(placesString)
+ 
+  const newPlace = req.body;
+  newPlace.id = nanoid()
+  places.push(newPlace);
+    console.log(places)
+  const placesToString = JSON.stringify(places);
+
+  await writeFilePromise(DATA_PATH, placesToString, 'utf8');
+
+  
+
+  res.json(newPlace)
+
+}catch(err){
+res.status(404).send(err)
+}
   }
 
 };
